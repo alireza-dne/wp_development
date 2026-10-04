@@ -1,8 +1,8 @@
 <?php
 
 
-include_once 'db.php';
-exit;
+include_once 'pt.php';
+// exit;
 
 /**
  * Twenty Twenty-Five functions and definitions.
