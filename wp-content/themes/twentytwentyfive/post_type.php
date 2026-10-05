@@ -55,7 +55,7 @@ function wpdocs_codex_book_init()
             'editor',
             'author',
             'thumbnail',
-            'excerpt',
+            '  ',
             'comments'
         ),
     );
@@ -65,3 +65,6 @@ function wpdocs_codex_book_init()
 
 
 add_action('init', 'wpdocs_codex_book_init');
+
+
+// $update = update_post_meta(11, 'age', 30);

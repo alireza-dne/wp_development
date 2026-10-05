@@ -1,7 +1,9 @@
 <?php
 
 
-include_once 'pt.php';
+include_once 'post_type.php';
+include_once 'meta_box.php';
+
 // exit;
 
 /**
