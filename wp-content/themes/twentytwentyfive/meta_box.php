@@ -12,7 +12,7 @@ function book_sample_meta_box_html_view()
 {
     $value = get_post_meta(get_the_ID(), 'book_sample_meta_date', true);
 ?>
-    <input type="text" name="book_sample" value="<?= $value ?>">
+<input type="text" name="book_sample" value="<?= $value ?>">
 <?php
 }
 
@@ -20,3 +20,15 @@ function store_book_sample_meta_value($post_id)
 {
     update_post_meta($post_id, 'book_sample_meta_date', $_POST['book_sample']);
 }
+
+
+$args = ['post_type' => 'book'];
+
+$query = new WP_Query($args);
+
+echo '<pre>';
+
+foreach ($query->get_posts() as $post) {
+    var_dump(get_the_post_thumbnail_url());
+}
+echo '</pre>';

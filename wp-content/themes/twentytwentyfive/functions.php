@@ -4,7 +4,7 @@
 include_once 'post_type.php';
 include_once 'meta_box.php';
 
-// exit;
+exit;
 
 /**
  * Twenty Twenty-Five functions and definitions.
