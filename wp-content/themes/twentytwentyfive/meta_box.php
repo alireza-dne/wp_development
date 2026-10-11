@@ -22,13 +22,13 @@ function store_book_sample_meta_value($post_id)
 }
 
 
-$args = ['post_type' => 'book'];
+// $args = ['post_type' => 'book'];
 
-$query = new WP_Query($args);
+// $query = new WP_Query($args);
 
-echo '<pre>';
+// echo '<pre>';
 
-foreach ($query->get_posts() as $post) {
-    var_dump(get_the_post_thumbnail_url());
-}
-echo '</pre>';
+// foreach ($query->get_posts() as $post) {
+//     var_dump(get_the_post_thumbnail_url());
+// }
+// echo '</pre>';
