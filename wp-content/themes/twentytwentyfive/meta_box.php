@@ -22,13 +22,19 @@ function store_book_sample_meta_value($post_id)
 }
 
 
-// $args = ['post_type' => 'book'];
+$args = [
+    'post_type' => 'OR',
 
-// $query = new WP_Query($args);
+    'tax_query' => [
+        'relation' => 'or',
+        ['taxonomy' => 'genre', 'field' => 'slug', 'terms' => 'lesson'],
+    ]
 
-// echo '<pre>';
+];
 
-// foreach ($query->get_posts() as $post) {
-//     var_dump(get_the_post_thumbnail_url());
-// }
-// echo '</pre>';
+$query = new WP_Query($args);
+echo '<pre>';
+foreach ($query->get_posts() as $post) {
+    var_dump($post);
+}
+echo '</pre>';

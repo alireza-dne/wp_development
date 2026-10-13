@@ -1,12 +1,12 @@
 <?php
 
-
+// include_once 'db.php';
 include_once 'post_type.php';
 include_once 'meta_box.php';
 include_once 'taxonomy.php';
 
 
-// exit;
+exit;
 
 /**
  * Twenty Twenty-Five functions and definitions.

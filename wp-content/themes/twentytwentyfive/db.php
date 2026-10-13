@@ -2,11 +2,9 @@
 
 global $wpdb;
 
-// $users=$wpdb->get_results($wpdb->prepare("select * from $wpdb->users"));
 
-// echo '<pre>';
-// var_dump($users);
-// echo '</pre>';
+// $users = $wpdb->get_results($wpdb->prepare("select * from $wpdb->users"));
+
 
 $args = [
     'include' => [1, 2],
@@ -27,7 +25,6 @@ $args = [
 $users = new WP_User_Query($args);
 
 
-
 echo '<pre>';
-var_dump(wp_get_current_user());
+var_dump($users->results);
 echo '</pre>';
