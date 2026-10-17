@@ -4,9 +4,10 @@
 include_once 'post_type.php';
 include_once 'meta_box.php';
 include_once 'taxonomy.php';
+include_once 'taxtest.php';
 
 
-exit;
+
 
 /**
  * Twenty Twenty-Five functions and definitions.

@@ -65,3 +65,40 @@ function wpdocs_create_book_taxonomies()
 }
 
 add_action('init', 'wpdocs_create_book_taxonomies', 0);
+
+
+
+// add_action('init', function () {
+//     $genres = get_terms([
+//         'taxonomy'   => 'genre',
+//         'hide_empty' => false,
+//     ]);
+
+//     echo '<pre>';
+//     var_dump('count($genres)');
+//     echo '</pre>';
+// });
+
+
+
+$args = [
+    'post_type' => 'book',
+    'author_not_in' => [1, 2],
+    // 'tax_query' => [
+    //     // [
+    //     //     'taxonomy' => 'genre',
+    //     //     'field'    => 'slug',
+    //     //     'terms'    => 'lesson',
+    //     // ],
+    // ],
+];
+
+
+
+$query = new WP_Query($args);
+
+echo '<pre>';
+foreach ($query->get_posts() as $post) {
+    // var_dump($post);
+}
+echo '</pre>';
