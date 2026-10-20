@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 7.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-09-18 13:33:52+0000\n"
+"PO-Revision-Date: 2026-10-17 07:08:12+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -947,7 +947,7 @@ msgstr "نام خانوادگی."
 #: wp-includes/abilities.php:186 wp-admin/user-edit.php:506
 #: wp-admin/user-new.php:556
 msgid "Last Name"
-msgstr "نام خانوداگی"
+msgstr "نام خانوادگی"
 
 #: wp-includes/abilities.php:182
 msgid "Given name."
@@ -13886,7 +13886,7 @@ msgstr "تنظیم تصویر شاخص"
 #: wp-includes/class-wp-post-type.php:1005
 msgctxt "post"
 msgid "Set featured image"
-msgstr "قرار دادن به‌عنوان تصویر شاخص"
+msgstr "تنظیم تصویر شاخص"
 
 #: wp-includes/class-wp-post-type.php:1004
 msgctxt "page"

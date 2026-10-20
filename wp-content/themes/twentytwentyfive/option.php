@@ -12,46 +12,67 @@ add_action('admin_menu', function () {
 
 function sms_setting_menu_html_view()
 {
-    echo "<h2>تنظیمات سامانه پیامکی</h2>";
 
-    echo "<div class='wrap'><form action='options.php' method='post'>";
+    $activeTab = $_GET['setting_menu_tab'] ?? 'one';
 
-    settings_fields('register_sms_settings');
-    do_settings_sections('sms_settings_sections');
-    submit_button('ذخیره تنظیمات');
-
-
-    echo "</form></div>";
-}
-
-
-
-
-
-
-
-
-
-add_action('admin_init', function () {
-
-    add_settings_section('cy_sms_api_section', 'کد api پنل پیامکی', 'cy_sms_section_html', 'sms_settings_sections');
-
-    register_setting('register_sms_settings', 'cy_sms_api_setting');
-
-    add_settings_field('cy_sms_api_setting_field', 'api code', 'cy_sms_input_html', 'sms_settings_sections', 'cy_sms_api_section');
-});
-
-
-function cy_sms_section_html()
-{
-    echo "<p>کد پنل را اینجا وارد فرمایید.</p>";
-}
-
-
-function cy_sms_input_html()
-{
-    $value = get_option('cy_sms_api_setting');
 ?>
-    <input type="text" name="cy_sms_api_setting" value="<?= $value ?>">
-<?php
-}
+<h2>تنظیمات سامانه پیامکی</h2>
+
+<div class='wrap'>
+    <form action='options.php' method='post'>
+
+        <h3 class="nav-tab-wrapper">
+            <a href="?page=sms_setting_menu&setting_menu_tab=one"
+                class="nav-tab <?= $activeTab == 'one' ? 'nav-tab-active' : '' ?>">تب اول</a>
+            <a href="?page=sms_setting_menu&setting_menu_tab=two"
+                class="nav-tab <?= $activeTab == 'two' ? 'nav-tab-active' : '' ?>">تب دوم</a>
+
+
+        </h3>
+        <?php
+
+
+            if ($activeTab == 'one') {
+                settings_fields('register_sms_settings');
+                do_settings_sections('sms_settings_sections');
+                submit_button('ذخیره تنظیمات');
+            } else {
+                echo "<h3>هنوز چیزی تعریف نشده اسن.</h3>";
+            }
+
+
+
+            echo "</form></div>";
+        }
+
+
+
+
+
+
+
+
+
+        add_action('admin_init', function () {
+
+            add_settings_section('cy_sms_api_section', 'کد api پنل پیامکی', 'cy_sms_section_html', 'sms_settings_sections');
+
+            register_setting('register_sms_settings', 'cy_sms_api_setting');
+
+            add_settings_field('cy_sms_api_setting_field', 'api code', 'cy_sms_input_html', 'sms_settings_sections', 'cy_sms_api_section');
+        });
+
+
+        function cy_sms_section_html()
+        {
+            echo "<p>کد پنل را اینجا وارد فرمایید.</p>";
+        }
+
+
+        function cy_sms_input_html()
+        {
+            $value = get_option('cy_sms_api_setting');
+            ?>
+        <input type="text" name="cy_sms_api_setting" value="<?= $value ?>">
+        <?php
+        }
