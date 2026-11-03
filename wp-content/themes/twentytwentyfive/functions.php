@@ -7,6 +7,8 @@ include_once 'taxonomy.php';
 include_once 'taxtest.php';
 include_once 'option.php';
 include_once 'user-option.php';
+include_once 'shortcode.php';
+
 
 
 
