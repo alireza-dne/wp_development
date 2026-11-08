@@ -1,10 +1,12 @@
 <?php
 
 // include_once 'db.php';
+// include_once 'db-post-type.php';
+include_once 'hook.php';
 include_once 'post_type.php';
 include_once 'meta_box.php';
 include_once 'taxonomy.php';
-include_once 'taxtest.php';
+// include_once 'taxtest.php';
 include_once 'option.php';
 include_once 'user-option.php';
 include_once 'shortcode.php';

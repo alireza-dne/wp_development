@@ -9,8 +9,9 @@ add_action('wp_footer', 'add_text_to_footer');
 
 
 
-// function add_text_to_title($post_title){
-//     return $post_title.' test text';
-// }
+function add_text_to_title($post_title)
+{
+    return $post_title . "<p style='color:#c00;'>test text</p>";
+}
 
-// add_filter( 'the_title', 'add_text_to_title' );
+add_filter('the_title', 'add_text_to_title');

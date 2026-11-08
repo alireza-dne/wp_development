@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 7.1.x - Development package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2026-10-17 07:08:12+0000\n"
+"PO-Revision-Date: 2026-11-06 22:40:50+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -285,6 +285,11 @@ msgstr "ژانویه"
 #, gp-priority: high
 msgid "Uncategorized"
 msgstr "دسته‌بندی نشده"
+
+#. translators: %s: The attribute name.
+#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1128
+msgid "The \"%s\" attribute cannot be bound on an \"object\" element, so the binding was ignored."
+msgstr "ویژگی «%s» نمی‌تواند به عنصر «شیء» متصل شود، بنابراین این اتصال نادیده گرفته شد."
 
 #: wp-includes/class-wp-xmlrpc-server.php:1489
 msgid "Sorry, this post type is not supported over XML-RPC."
@@ -667,12 +672,12 @@ msgid "Image Caption"
 msgstr "عنوان تصویر"
 
 #. translators: %s: The attribute name.
-#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1211
+#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1231
 msgid "Attempted to bind a non-finite number to the \"%s\" attribute. Ensure the state/context property or the derived state closure resolves to a finite number or a string."
 msgstr "تلاش شد یک عدد غیرمتناهی به ویژگی «%s» متصل شود. مطمئن شوید ویژگی state/context یا بستار حالت مشتق‌شده به یک عدد متناهی یا رشته منتهی می‌شود."
 
 #. translators: %s: The attribute name.
-#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1179
+#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1199
 msgid "Attempted to bind a non-scalar value to the \"%s\" attribute. Ensure the state/context property or the derived state closure resolves to a string, number, or boolean."
 msgstr "تلاش شد یک مقدار غیرنرده‌ای به ویژگی «%s» متصل شود. مطمئن شوید ویژگی state/context یا بستار حالت مشتق‌شده به یک رشته، عدد یا مقدار بولی منتهی می‌شود."
 
@@ -847,7 +852,7 @@ msgid "Extended Toolbar"
 msgstr "نوار ابزار گسترده"
 
 #. translators: %s: Theme name.
-#: wp-includes/class-wp-customize-manager.php:4962
+#: wp-includes/class-wp-customize-manager.php:4968
 #: wp-admin/theme-install.php:71 wp-admin/themes.php:241
 msgid "Theme details: %s"
 msgstr "جزئیات پوسته: %s"
@@ -1029,7 +1034,7 @@ msgstr "فرادادهٔ قابلیت باید یک مقدار بولی معتب
 msgid "When the %1$s arg is provided, the \"%2$s\" script must either be printed in the footer (%3$s set to true) or use a deferred loading %4$s (%5$s) so that the import map is printed before the script is evaluated."
 msgstr "هنگامی که آرگومان %1$s ارائه می‌شود، اسکریپت \"%2$s\" باید یا در پابرگ چاپ شود (%3$s روی درست تنظیم شود) یا از بارگذاری به تعویق افتاده %4$s (%5$s) استفاده کند تا نقشه درون‌ریزی پیش از ارزیابی اسکریپت چاپ شود."
 
-#: wp-includes/class-wp-customize-manager.php:4342
+#: wp-includes/class-wp-customize-manager.php:4348
 #: wp-includes/class-wp-editor.php:1255
 #: wp-admin/includes/class-wp-posts-list-table.php:1652
 #: wp-admin/includes/class-wp-theme-install-list-table.php:348
@@ -1040,12 +1045,12 @@ msgctxt "verb"
 msgid "Preview"
 msgstr "پیش‌نمایش"
 
-#: wp-includes/blocks/image.php:209 wp-includes/blocks/image.php:327
+#: wp-includes/blocks/image.php:209 wp-includes/blocks/image.php:342
 msgctxt "next image in lightbox"
 msgid "Next"
 msgstr "بعدی"
 
-#: wp-includes/blocks/image.php:208 wp-includes/blocks/image.php:326
+#: wp-includes/blocks/image.php:208 wp-includes/blocks/image.php:341
 msgctxt "previous image in lightbox"
 msgid "Previous"
 msgstr "قبلی"
@@ -1241,7 +1246,7 @@ msgctxt "track title, artist name, album name"
 msgid "%1$s by %2$s from the album %3$s"
 msgstr "%1$s توسط %2$s از آلبوم %3$s"
 
-#: wp-includes/build/routes/connectors-home/content.js:11706
+#: wp-includes/build/routes/connectors-home/content.js:11707
 #: wp-admin/includes/class-wp-debug-data.php:438
 #: wp-admin/includes/class-wp-debug-data.php:632
 #: wp-admin/includes/class-wp-debug-data.php:646
@@ -2045,12 +2050,12 @@ msgctxt "keyboard shortcut to open the command palette"
 msgid "⌘K"
 msgstr "⌘K"
 
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2107
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2115
 msgid "Sorry, you are not allowed to create notes for this post."
 msgstr "با عرض پوزش، شما اجازهٔ ایجاد یادداشت برای این نوشته را ندارید."
 
 #. translators: %s: The directive, e.g. data-wp-on--click.
-#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1122
+#: wp-includes/interactivity-api/class-wp-interactivity-api.php:1142
 msgid "Binding event handler attributes is not supported. Please use \"%s\" instead."
 msgstr "اتصال ویژگی‌های هندلر رویداد پشتیبانی نمی‌شود. لطفاً به‌جای آن از «%s» استفاده نمایید."
 
@@ -2298,7 +2303,7 @@ msgid "User error triggered:"
 msgstr "خطای کاربر فعال شد:"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:153
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2143
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2151
 msgid "Sorry, this post type does not support notes."
 msgstr "با عرض پوزش، این نوع نوشته از یادداشت‌ها پشتیبانی نمی‌کند."
 
@@ -3868,7 +3873,7 @@ msgstr "ویرایش %1$s (%2$s، زیر-مورد %3$d از %4$d زیر %5$s)"
 msgid "Edit %1$s (%2$s, %3$d of %4$d)"
 msgstr "ویرایش %1$s (%2$s، %3$d از %4$d)"
 
-#: wp-includes/class-wp-customize-manager.php:5716
+#: wp-includes/class-wp-customize-manager.php:5722
 #: wp-includes/js/dist/editor.js:72472
 msgid "https://developer.wordpress.org/advanced-administration/wordpress/css/"
 msgstr "https://developer.wordpress.org/advanced-administration/wordpress/css/"
@@ -3900,7 +3905,7 @@ msgctxt "block description"
 msgid "Reuse this design across your site."
 msgstr "استفاده مجدد از این طراحی در سایت شما."
 
-#: wp-includes/js/dist/editor.js:101469 wp-admin/about.php:223
+#: wp-includes/js/dist/editor.js:101469 wp-admin/about.php:243
 msgid "Accessibility"
 msgstr "دسترسی‌پذیری"
 
@@ -4432,7 +4437,7 @@ msgid "\"%1$s\" in %2$s %3$s is not a hex or rgb string."
 msgstr "\"%1$s\" در %2$s %3$s یک عبارت hex یا rgb نیست."
 
 #. translators: 1: pixel value for icon size. 2: pixel value for icon size.
-#: wp-includes/class-wp-customize-manager.php:5219
+#: wp-includes/class-wp-customize-manager.php:5225
 #: wp-admin/options-general.php:215
 msgid "The Site Icon is what you see in browser tabs, bookmark bars, and within the WordPress mobile apps. It should be square and at least <strong>%1$s by %2$s</strong> pixels."
 msgstr "آیکون سایت همان چیزی است که در برگه‌های مرورگر، نوارهای نشانه‌گذاری و در برنامه‌های موبایل وردپرس مشاهده می‌شود. باید مربع شکل باشد و حداقل <code>%1$s در %2$s</code> پیکسل باشد."
@@ -4544,7 +4549,7 @@ msgstr "فونت‌ها"
 msgid "Template part updated."
 msgstr "بخش قالب به‌روز شد."
 
-#: wp-includes/build/routes/connectors-home/content.js:12205
+#: wp-includes/build/routes/connectors-home/content.js:12206
 #: wp-includes/build/routes/connectors-home/route.js:53 wp-admin/menu.php:407
 #: wp-admin/options-connectors.php:30
 msgid "Connectors"
@@ -4735,7 +4740,7 @@ msgstr "تصویر بزرگ‌نمایی شده"
 msgid "Enlarged image: %s"
 msgstr "بزرگ‌نمایی تصویر: %s"
 
-#: wp-includes/blocks/image.php:324
+#: wp-includes/blocks/image.php:339
 msgid "Enlarged images"
 msgstr "بزرگ‌نمایی تصویر"
 
@@ -4761,7 +4766,7 @@ msgstr "یادگیری وردپرس"
 #: wp-includes/update.php:1161
 #: wp-admin/includes/class-wp-automatic-updater.php:506
 #: wp-admin/includes/class-wp-upgrader.php:189
-#: wp-admin/includes/class-wp-upgrader.php:1020 wp-admin/includes/file.php:1618
+#: wp-admin/includes/class-wp-upgrader.php:1051 wp-admin/includes/file.php:1618
 #: wp-admin/includes/plugin.php:954 wp-admin/includes/theme.php:62
 msgid "Could not access filesystem."
 msgstr "دسترسی به فایل‌سیستم امکان‌پذیر نیست."
@@ -9575,7 +9580,7 @@ msgid "The \"%s\" must be a callable function."
 msgstr "\"%s\" باید یک تابع فراخوان باشد."
 
 #. translators: %s: customize_messenger_channel
-#: wp-includes/class-wp-customize-manager.php:1935
+#: wp-includes/class-wp-customize-manager.php:1941
 msgid "Unauthorized. You may remove the %s param to preview as frontend."
 msgstr "غیرمجاز. می‌توانید پارامتر %s را برای پیش‌نمایش به عنوان صفحهٔ اصلی حذف نمایید."
 
@@ -9646,7 +9651,7 @@ msgstr "برش"
 msgid "Notifications"
 msgstr "آگاه‌سازی‌ها"
 
-#: wp-includes/class-wp-customize-manager.php:5051
+#: wp-includes/class-wp-customize-manager.php:5057
 #: wp-includes/build/routes/font-list/content.js:11210
 #: wp-includes/js/dist/block-editor.js:13249
 #: wp-includes/js/dist/block-editor.js:83539
@@ -9656,7 +9661,7 @@ msgstr "آگاه‌سازی‌ها"
 msgid "Mobile"
 msgstr "موبایل"
 
-#: wp-includes/class-wp-customize-manager.php:5048
+#: wp-includes/class-wp-customize-manager.php:5054
 #: wp-includes/build/routes/font-list/content.js:11209
 #: wp-includes/js/dist/block-editor.js:13244
 #: wp-includes/js/dist/block-editor.js:83538
@@ -9665,7 +9670,7 @@ msgstr "موبایل"
 msgid "Tablet"
 msgstr "تبلت"
 
-#: wp-includes/class-wp-customize-manager.php:5044
+#: wp-includes/class-wp-customize-manager.php:5050
 #: wp-includes/js/dist/block-editor.js:13239
 #: wp-includes/js/dist/editor.js:91654
 msgid "Desktop"
@@ -11077,7 +11082,7 @@ msgctxt "excerpt_length"
 msgid "55"
 msgstr "55"
 
-#: wp-includes/class-wp-customize-manager.php:5584
+#: wp-includes/class-wp-customize-manager.php:5590
 #: wp-admin/includes/class-custom-background.php:457
 msgctxt "Original Size"
 msgid "Original"
@@ -11843,9 +11848,9 @@ msgstr "مورد افزوده شد."
 #. translators: Hidden accessibility text.
 #. translators: accessibility text appended to link text
 #. translators: accessibility text
-#: wp-includes/class-wp-customize-manager.php:4393
-#: wp-includes/class-wp-customize-manager.php:5719
-#: wp-includes/class-wp-customize-manager.php:5740
+#: wp-includes/class-wp-customize-manager.php:4399
+#: wp-includes/class-wp-customize-manager.php:5725
+#: wp-includes/class-wp-customize-manager.php:5746
 #: wp-includes/customize/class-wp-customize-nav-menu-locations-control.php:58
 #: wp-includes/functions.php:8797 wp-includes/media-template.php:174
 #: wp-includes/widgets/class-wp-widget-custom-html.php:319 wp-login.php:697
@@ -12485,16 +12490,16 @@ msgid "You need a higher level of permission."
 msgstr "شما به یک مجوز سطح بالاتر نیاز دارید."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4145
+#: wp-includes/class-wp-customize-manager.php:4151
 msgid "%s is already customizing this changeset. Do you want to take over?"
 msgstr "%s در حال سفارشی‌سازی تغییرات است. می‌خواهید به‌دست بگیرید؟"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4143
+#: wp-includes/class-wp-customize-manager.php:4149
 msgid "%s is already customizing this changeset. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "%s در حال سفارشی‌سازی تغییرات است. لطفاً صبور باشید تا کار سفارشی‌سازی انجام شود. آخرین تغییرات شما به طور خودکار ذخیره شده است."
 
-#: wp-includes/class-wp-customize-manager.php:4358
+#: wp-includes/class-wp-customize-manager.php:4364
 #: wp-admin/includes/file.php:342
 msgid "Update anyway, even though it might break your site?"
 msgstr "در هر صورت به‌روزرسانی شود، حتی اگر منجر به از کار افتادن سایت‌تان شود؟"
@@ -12544,7 +12549,7 @@ msgstr "پراستفاده"
 msgid "Click &#8220;Next&#8221; to start adding links to your new menu."
 msgstr "برای شروع افزودن پیوندها به فهرست جدیدتان &#8220;بعدی&#8221; را کلیک نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:4879
+#: wp-includes/class-wp-customize-manager.php:4885
 #: wp-includes/script-loader.php:1315
 msgctxt "customizer changeset action/button label"
 msgid "Schedule"
@@ -12578,12 +12583,12 @@ msgstr "%s در دست گرفته است و در حال سفارشی‌سازی 
 msgid "Looks like something&#8217;s gone wrong. Wait a couple seconds, and then try again."
 msgstr "به نظر می‌رسد چیزی اشتباه شده است. لطفا چند ثانیه صبر کنید و سپس دوباره امتحان کنید."
 
-#: wp-includes/class-wp-customize-manager.php:4344
+#: wp-includes/class-wp-customize-manager.php:4350
 #: wp-includes/js/dist/editor.js:85739 wp-admin/includes/post.php:1924
 msgid "Take over"
 msgstr "بر عهده گرفتن"
 
-#: wp-includes/class-wp-customize-manager.php:4340
+#: wp-includes/class-wp-customize-manager.php:4346
 #: wp-includes/js/dist/editor.js:76434 wp-includes/js/dist/editor.js:78234
 #: wp-includes/js/dist/editor.js:83569 wp-includes/js/dist/editor.js:84159
 #: wp-includes/js/dist/editor.js:98082 wp-includes/js/dist/editor.js:98242
@@ -12595,29 +12600,29 @@ msgid "Go back"
 msgstr "بازگشت"
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4150
+#: wp-includes/class-wp-customize-manager.php:4156
 msgid "%s is already customizing this site. Please wait until they are done to try customizing. Your latest changes have been autosaved."
 msgstr "در حال حاضر %s این سایت را سفارشی می‌کند. لطفأ منتظر بمانید تا سفارشی‌سازی پایان یابد. آخرین تغییرات شما به صورت خودکار ذخیره شده‌ است."
 
 #. translators: %s: User who is customizing the changeset in customizer.
-#: wp-includes/class-wp-customize-manager.php:4152
+#: wp-includes/class-wp-customize-manager.php:4158
 msgid "%s is already customizing this site. Do you want to take over?"
 msgstr "در حال حاضر %s این سایت را سفارشی می‌کند. آیا می‌خواهید برعهده بگیرید؟"
 
-#: wp-includes/class-wp-customize-manager.php:3421
+#: wp-includes/class-wp-customize-manager.php:3427
 msgid "Sorry, you are not allowed to take over."
 msgstr "با عرض پوزش، شما مجاز به دردست گرفتن نیستید."
 
-#: wp-includes/class-wp-customize-manager.php:3412
+#: wp-includes/class-wp-customize-manager.php:3418
 msgid "No changeset found to take over"
 msgstr "لیست تغییراتی برای به عهده گرفتن یافت نشد"
 
-#: wp-includes/class-wp-customize-manager.php:3401
+#: wp-includes/class-wp-customize-manager.php:3407
 msgid "Security check failed."
 msgstr "بررسی امنیتی ناموفق شد."
 
-#: wp-includes/class-wp-customize-manager.php:2550
-#: wp-includes/class-wp-customize-manager.php:3185
+#: wp-includes/class-wp-customize-manager.php:2556
+#: wp-includes/class-wp-customize-manager.php:3191
 msgid "Changeset is being edited by other user."
 msgstr "مجموعه تغییراتی در حال ویرایش توسط کاربر دیگری است."
 
@@ -12651,11 +12656,11 @@ msgctxt "menu locations"
 msgid "View All Locations"
 msgstr "مشاهده همهٔ مکان‌ها"
 
-#: wp-includes/class-wp-customize-manager.php:5086
+#: wp-includes/class-wp-customize-manager.php:5092
 msgid "While previewing a new theme, you can continue to tailor things like widgets and menus, and explore theme-specific options."
 msgstr "درهنگام پیش‌نمایش یک پوسته جدید، می‌توانید به ادامه وارسی چیزهایی مانند ابزارک‌ها و فهرست‌ها بپردازید، و گزینه‌های ویژه پوسته را مرور نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:5085
+#: wp-includes/class-wp-customize-manager.php:5091
 msgid "Looking for a theme? You can search or browse the WordPress.org theme directory, install and preview themes, then activate them right here."
 msgstr "به دنبال یک پوسته هستید؟ شما میتوانید در فهرست پوسته‌های سایت WordPress.org جستجو کنید، پیش‌نمایش پوسته‌ها را ببینید و نصب کنید، سپس آنها را از اینجا فعال کنید."
 
@@ -13397,63 +13402,63 @@ msgstr[1] ""
 msgid "Your theme can display menus in one location."
 msgstr "پوستهٔ شما می‌تواند فهرست‌ها را در یک مکان نمایش دهد."
 
-#: wp-includes/class-wp-customize-manager.php:5775
+#: wp-includes/class-wp-customize-manager.php:5781
 msgid "CSS code"
 msgstr "کد css"
 
 #. translators: 1: Link to user profile, 2: Additional link attributes, 3:
 #. Accessibility text.
-#: wp-includes/class-wp-customize-manager.php:5734
+#: wp-includes/class-wp-customize-manager.php:5740
 #: wp-includes/widgets/class-wp-widget-custom-html.php:313
 msgid "The edit field automatically highlights code syntax. You can disable this in your <a href=\"%1$s\" %2$s>user profile%3$s</a> to work in plain text mode."
 msgstr "ورودی فیلد ویرایش به صورت خودکار گرامر کد را رنگ‌بندی می‌کند. می‌توانید این مورد را در <a href=\"%1$s\" %2$s>مشخصات کاربری‌تان%3$s</a> غیر‌فعال نمایید تا در حالت متن ساده کار کنید."
 
-#: wp-includes/class-wp-customize-manager.php:5727
+#: wp-includes/class-wp-customize-manager.php:5733
 #: wp-includes/widgets/class-wp-widget-custom-html.php:328
 #: wp-admin/plugin-editor.php:148 wp-admin/theme-editor.php:37
 msgid "Screen reader users: when in forms mode, you may need to press the Esc key twice."
 msgstr "کاربران صفحه‌خوان: در هنگام حالت فرم‌ها، ممکن است شما نیاز به فشردن دوبار کلید Esc داشته باشید."
 
-#: wp-includes/class-wp-customize-manager.php:5726
+#: wp-includes/class-wp-customize-manager.php:5732
 #: wp-includes/widgets/class-wp-widget-custom-html.php:327
 #: wp-admin/plugin-editor.php:147 wp-admin/theme-editor.php:36
 msgid "To move away from this area, press the Esc key followed by the Tab key."
 msgstr "برای عبور از این ناحیه، کلید Esc را به همراه کلید Tab فشار دهید."
 
-#: wp-includes/class-wp-customize-manager.php:5725
+#: wp-includes/class-wp-customize-manager.php:5731
 #: wp-includes/widgets/class-wp-widget-custom-html.php:326
 #: wp-admin/plugin-editor.php:146 wp-admin/theme-editor.php:35
 msgid "In the editing area, the Tab key enters a tab character."
 msgstr "در ناحیه ویرایش، کلید Tab یک حرف Tab وارد می‌کند."
 
-#: wp-includes/class-wp-customize-manager.php:5723
+#: wp-includes/class-wp-customize-manager.php:5729
 #: wp-includes/widgets/class-wp-widget-custom-html.php:324
 #: wp-admin/plugin-editor.php:144 wp-admin/theme-editor.php:33
 msgid "When using a keyboard to navigate:"
 msgstr "هنگامی که از یک صفحه‌کلید جهت راهبری استفاده می‌کنید:"
 
-#: wp-includes/class-wp-customize-manager.php:5713
+#: wp-includes/class-wp-customize-manager.php:5719
 msgid "Add your own CSS code here to customize the appearance and layout of your site."
 msgstr "کد CSS خود را در اینجا اضافه نمایید تا ظاهر و طرح سایت‌تان را سفارشی نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:5665
+#: wp-includes/class-wp-customize-manager.php:5671
 #: wp-admin/options-reading.php:85
 msgid "Your homepage displays"
 msgstr "صفحه اصلی شما نمایش داده می‌شود"
 
-#: wp-includes/class-wp-customize-manager.php:5648
+#: wp-includes/class-wp-customize-manager.php:5654
 msgid "You can choose what&#8217;s displayed on the homepage of your site. It can be posts in reverse chronological order (classic blog), or a fixed/static page. To set a static homepage, you first need to create two Pages. One will become the homepage, and the other will be where your posts are displayed."
 msgstr "می‌توانید انتخاب کنید که چه چیزی در صفحه خانه سایت‌تان نمایش داده شود. آن می‌تواند نوشته‌ها در ترتیب زمانی معکوس (بلاگ کلاسیک)، یا برگه ایستا/ثابت باشد. برای تنظیم یک صفحه خانه ایستا، ابتدا نیاز به ایجاد دو برگه دارید. یکی صفحه خانه خواهد شد، و دیگری جایی که نوشته‌های شما نمایش داده خواهد شد."
 
-#: wp-includes/class-wp-customize-manager.php:5646
+#: wp-includes/class-wp-customize-manager.php:5652
 msgid "Homepage Settings"
 msgstr "تنظیمات برگه خانه"
 
-#: wp-includes/class-wp-customize-manager.php:5114
+#: wp-includes/class-wp-customize-manager.php:5120
 msgid "WordPress.org themes"
 msgstr "پوسته‌های WordPress.org"
 
-#: wp-includes/class-wp-customize-manager.php:5099
+#: wp-includes/class-wp-customize-manager.php:5105
 msgid "Installed themes"
 msgstr "پوسته‌های نصب شده"
 
@@ -13462,59 +13467,59 @@ msgstr "پوسته‌های نصب شده"
 msgid "Publish Settings"
 msgstr "تنظیمات انتشار"
 
-#: wp-includes/class-wp-customize-manager.php:4398
+#: wp-includes/class-wp-customize-manager.php:4404
 msgid "Copied"
 msgstr "کپی شد"
 
 #. translators: Hidden accessibility text.
-#: wp-includes/class-wp-customize-manager.php:4385
+#: wp-includes/class-wp-customize-manager.php:4391
 msgid "Preview Link"
 msgstr "پیش‌نمایش پیوند"
 
-#: wp-includes/class-wp-customize-manager.php:4379
+#: wp-includes/class-wp-customize-manager.php:4385
 msgid "See how changes would look live on your website, and share the preview with people who can't access the Customizer."
 msgstr "به صورت زنده مشاهده نمایید که تغییرات، چگونه در وب‌سایت شما نمایان خواهد شد، و پیش‌نمایش را با افرادی که نمی‌توانند به قسمت سفارشی‌سازی دستیابی داشته باشند، به اشتراک بگذارید."
 
-#: wp-includes/class-wp-customize-manager.php:4377
+#: wp-includes/class-wp-customize-manager.php:4383
 msgid "Share Preview Link"
 msgstr "اشتراک پیوند پیش‌نمایش"
 
-#: wp-includes/class-wp-customize-manager.php:3212
+#: wp-includes/class-wp-customize-manager.php:3218
 msgid "Changes trashed successfully."
 msgstr "تغییرات با موفقیت به زباله‌دان انتقال یافتند."
 
-#: wp-includes/class-wp-customize-manager.php:3194
+#: wp-includes/class-wp-customize-manager.php:3200
 msgid "Changes have already been trashed."
 msgstr "تغییرات در حال حاضر به زباله‌دان منتقل شده‌اند."
 
-#: wp-includes/class-wp-customize-manager.php:3174
-#: wp-includes/class-wp-customize-manager.php:3205
+#: wp-includes/class-wp-customize-manager.php:3180
+#: wp-includes/class-wp-customize-manager.php:3211
 msgid "Unable to trash changes."
 msgstr "عدم توانایی در انتقال تغییرات به زباله‌دان."
 
-#: wp-includes/class-wp-customize-manager.php:3164
+#: wp-includes/class-wp-customize-manager.php:3170
 msgid "No changes saved yet, so there is nothing to trash."
 msgstr "هیچ تغییری هنوز ذخیره نشده است، بنابراین چیزی برای ارسال به زباله‌دان وجود ندارد."
 
-#: wp-includes/class-wp-customize-manager.php:3154
+#: wp-includes/class-wp-customize-manager.php:3160
 msgid "There was an authentication problem. Please reload and try again."
 msgstr "مشکلی با احراز هویت وجود داشت. لطفاً بارگذاری و دوباره سعی نمایید."
 
 #. translators: %s: Number of invalid settings.
-#: wp-includes/class-wp-customize-manager.php:2806
+#: wp-includes/class-wp-customize-manager.php:2812
 #: wp-includes/script-loader.php:1356 wp-includes/script-loader.php:1358
 msgid "Unable to save due to %s invalid setting."
 msgid_plural "Unable to save due to %s invalid settings."
 msgstr[0] "به دلیل تنظیمات نامعتبر %s قابل ذخیره نیست."
 msgstr[1] ""
 
-#: wp-includes/class-wp-customize-manager.php:2687
-#: wp-includes/class-wp-customize-manager.php:2702
+#: wp-includes/class-wp-customize-manager.php:2693
+#: wp-includes/class-wp-customize-manager.php:2708
 #: wp-includes/script-loader.php:1319
 msgid "You must supply a future date to schedule."
 msgstr "برای برنامه‌ریزی باید تاریخی در آینده را وارد کنید."
 
-#: wp-includes/class-wp-customize-manager.php:2664
+#: wp-includes/class-wp-customize-manager.php:2670
 msgid "The previous set of changes has already been published. Please try saving your current set of changes again."
 msgstr "مجموعه قبلی از تغییرات در حال حاضر منتشر شده است. لطفا مجموعه تغییرات فعلی خود را مجددا ذخیره کنید."
 
@@ -14379,14 +14384,14 @@ msgstr "با عرض پوزش، شما مجاز به مشاهده رونوشت‌
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:612
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:620
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2151
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2159
 msgid "Sorry, you are not allowed to create a comment on this post."
 msgstr "با عرض پوزش، شما مجاز به افزودن دیدگاه به این نوشته نیستید."
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:584
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:604
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2085
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2124
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2093
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2132
 msgid "Sorry, you are not allowed to create this comment without a post."
 msgstr "با عرض پوزش، شما بدون یک نوشته مجاز به ایجاد این دیدگاه نیستید. "
 
@@ -14400,7 +14405,7 @@ msgstr "با عرض پوزش، شما مجاز به ویرایش '%s' برای �
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:138
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:463
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:628
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2159
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2167
 msgid "Sorry, you are not allowed to read the post for this comment."
 msgstr "با عرض پوزش، شما مجاز به خواندن نوشتهٔ این دیدگاه نیستید."
 
@@ -14615,7 +14620,7 @@ msgstr "پنهان کردن کنترل‌ها"
 msgid "Document Preview"
 msgstr "پیش‌نمایش سند"
 
-#: wp-includes/class-wp-customize-manager.php:5345
+#: wp-includes/class-wp-customize-manager.php:5351
 msgid "Header Media"
 msgstr "رسانهٔ سربرگ"
 
@@ -14651,7 +14656,7 @@ msgstr "توضیح مختصر HTML برای پیوست، برای نمایش ت�
 msgid "Caption for the attachment, as it exists in the database."
 msgstr "توضیح مختصر برای پیوست در پایگاه‌داده وجود دارد."
 
-#: wp-includes/class-wp-customize-manager.php:6135
+#: wp-includes/class-wp-customize-manager.php:6141
 msgid "Please enter a valid YouTube URL."
 msgstr "لطفا نشانی اینترنتی معتبر یوتیوب را وارد کنید."
 
@@ -14680,7 +14685,7 @@ msgstr "نوشته حذف نمی‌شود. برای حذف '%s' را تنظیم 
 msgid "The comment does not support trashing. Set '%s' to delete."
 msgstr "دیدگاه حذف نمی‌شود. برای حذف '%s' را تنظیم نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:5459
+#: wp-includes/class-wp-customize-manager.php:5465
 msgid "Or, enter a YouTube URL:"
 msgstr "یا، یک نشانی یوتوب وارد کنید:"
 
@@ -14721,7 +14726,7 @@ msgstr "با عرض پوزش، بازتاب برای این مورد بسته ش
 msgid "I really need an ID for this to work."
 msgstr "واقعاً به یک شناسه برای این کار نیازمندم."
 
-#: wp-includes/class-wp-customize-manager.php:5686
+#: wp-includes/class-wp-customize-manager.php:5692
 #: wp-includes/js/dist/block-library.js:47617
 #: wp-includes/js/dist/editor.js:8774 wp-includes/js/dist/editor.js:79622
 #: wp-admin/includes/file.php:39
@@ -15705,151 +15710,151 @@ msgid "Post"
 msgstr "نوشته"
 
 #. translators: 1: .mp4, 2: .mov
-#: wp-includes/class-wp-customize-manager.php:6110
+#: wp-includes/class-wp-customize-manager.php:6116
 msgid "Only %1$s or %2$s files may be used for header video. Please convert your video file and try again, or, upload your video to YouTube and link it with the option below."
 msgstr "تنها پرونده‌های %1$s و %2$s می‌توانند به عنوان سربرگ ویدئویی استفاده شوند. لطفا ویدئوی خود را تبدیل و دوباره تلاش کنید، یا ویدئوی خود را در یوتوب بارگذاری کنید و از طریق گزینهٔ زیر از آن استفاده کنید."
 
-#: wp-includes/class-wp-customize-manager.php:6102
+#: wp-includes/class-wp-customize-manager.php:6108
 msgid "This video file is too large to use as a header video. Try a shorter video or optimize the compression settings and re-upload a file that is less than 8MB. Or, upload your video to YouTube and link it with the option below."
 msgstr "حجم این ویدئو برای استفاده در سربرگ خیلی زیاد است. لطفا ویدئو را کم‌حجم یا بهینه کنید و ویدئویی با حجم کمتر از ۸ مگابایت بارگذاری کنید. همچنین می‌توانید ویدئوی خود را در یوتوب بارگذاری کنید و از طریق گزینهٔ زیر از آن استفاده کنید. "
 
-#: wp-includes/class-wp-customize-manager.php:6061
+#: wp-includes/class-wp-customize-manager.php:6067
 msgid "Unrecognized background setting."
 msgstr "تنظیمات ناشناختهٔ پس‌زمینه."
 
-#: wp-includes/class-wp-customize-manager.php:6052
-#: wp-includes/class-wp-customize-manager.php:6056
+#: wp-includes/class-wp-customize-manager.php:6058
+#: wp-includes/class-wp-customize-manager.php:6062
 msgid "Invalid value for background size."
 msgstr "مقدار نامعتبر برای اندازهٔ پس‌زمینه."
 
-#: wp-includes/class-wp-customize-manager.php:6048
+#: wp-includes/class-wp-customize-manager.php:6054
 msgid "Invalid value for background position Y."
 msgstr "مقدار نامعتبر برای موقعیت Y پس‌زمینه. "
 
-#: wp-includes/class-wp-customize-manager.php:6044
+#: wp-includes/class-wp-customize-manager.php:6050
 msgid "Invalid value for background position X."
 msgstr "مقدار نامعتبر برای موقعیت X پس‌زمینه. "
 
-#: wp-includes/class-wp-customize-manager.php:6040
+#: wp-includes/class-wp-customize-manager.php:6046
 msgid "Invalid value for background attachment."
 msgstr "مقدار نامعتبر برای پیوست پس‌زمینه. "
 
-#: wp-includes/class-wp-customize-manager.php:6036
+#: wp-includes/class-wp-customize-manager.php:6042
 msgid "Invalid value for background repeat."
 msgstr "مقدار نامعتبر برای تکرار پس‌زمینه. "
 
-#: wp-includes/class-wp-customize-manager.php:5717
+#: wp-includes/class-wp-customize-manager.php:5723
 #: wp-includes/js/dist/editor.js:72476
 msgid "Learn more about CSS"
 msgstr "دربارهٔ css بیشتر بدانید"
 
-#: wp-includes/class-wp-customize-manager.php:5753
+#: wp-includes/class-wp-customize-manager.php:5759
 #: wp-includes/js/dist/block-editor.js:79642
 #: wp-includes/js/dist/editor.js:72463 wp-includes/js/dist/editor.js:100605
 msgid "Additional CSS"
 msgstr "css اضافی"
 
-#: wp-includes/class-wp-customize-manager.php:5621
+#: wp-includes/class-wp-customize-manager.php:5627
 #: wp-admin/includes/class-custom-background.php:478
 msgid "Scroll with Page"
 msgstr "متحرک با صفحه"
 
-#: wp-includes/class-wp-customize-manager.php:5603
+#: wp-includes/class-wp-customize-manager.php:5609
 #: wp-admin/includes/class-custom-background.php:469
 msgid "Repeat Background Image"
 msgstr "تکرار تصویر پس‌زمینه"
 
-#: wp-includes/class-wp-customize-manager.php:5580
+#: wp-includes/class-wp-customize-manager.php:5586
 #: wp-admin/includes/class-custom-background.php:452
 msgid "Image Size"
 msgstr "اندازه تصویر"
 
 #. translators: Hidden accessibility text.
-#: wp-includes/class-wp-customize-manager.php:5558
+#: wp-includes/class-wp-customize-manager.php:5564
 #: wp-includes/customize/class-wp-customize-background-position-control.php:96
 #: wp-admin/includes/class-custom-background.php:380
 msgid "Image Position"
 msgstr "موقعیت تصویر"
 
-#: wp-includes/class-wp-customize-manager.php:5530
+#: wp-includes/class-wp-customize-manager.php:5536
 msgctxt "Custom Preset"
 msgid "Custom"
 msgstr "سفارشی"
 
-#: wp-includes/class-wp-customize-manager.php:5529
+#: wp-includes/class-wp-customize-manager.php:5535
 msgctxt "Repeat Image"
 msgid "Repeat"
 msgstr "تکرار"
 
-#: wp-includes/class-wp-customize-manager.php:5528
-#: wp-includes/class-wp-customize-manager.php:5585
+#: wp-includes/class-wp-customize-manager.php:5534
+#: wp-includes/class-wp-customize-manager.php:5591
 #: wp-admin/includes/class-custom-background.php:458
 msgid "Fit to Screen"
 msgstr "به‌اندازهٔ صفحه نمایش"
 
-#: wp-includes/class-wp-customize-manager.php:5526
+#: wp-includes/class-wp-customize-manager.php:5532
 msgctxt "Default Preset"
 msgid "Default"
 msgstr "پیشفرض"
 
-#: wp-includes/class-wp-customize-manager.php:5522
+#: wp-includes/class-wp-customize-manager.php:5528
 msgctxt "Background Preset"
 msgid "Preset"
 msgstr "کنونی"
 
-#: wp-includes/class-wp-customize-manager.php:5445
+#: wp-includes/class-wp-customize-manager.php:5451
 msgid "Header Video"
 msgstr "ویدئوی سربرگ"
 
 #. translators: 1: .mp4, 2: Header height in pixels.
-#: wp-includes/class-wp-customize-manager.php:5367
+#: wp-includes/class-wp-customize-manager.php:5373
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a height of %2$s pixels."
 msgstr "برای گرفتن بهترین نتایج ویدئوی خود را با پسوند %1$s و کمترین حجم بارگذاری نمایید. پوستهٔ شما ارتفاع %2$s پیکسل را پیشنهاد می‌دهد."
 
 #. translators: 1: .mp4, 2: Header width in pixels.
-#: wp-includes/class-wp-customize-manager.php:5360
+#: wp-includes/class-wp-customize-manager.php:5366
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends a width of %2$s pixels."
 msgstr "برای گرفتن بهترین نتایج ویدئوی خود را با پسوند %1$s و کمترین حجم بارگذاری نمایید. پوستهٔ شما عرض %2$s پیکسل را پیشنهاد می‌دهد."
 
 #. translators: 1: .mp4, 2: Header size in pixels.
-#: wp-includes/class-wp-customize-manager.php:5353
+#: wp-includes/class-wp-customize-manager.php:5359
 msgid "Upload your video in %1$s format and minimize its file size for best results. Your theme recommends dimensions of %2$s pixels."
 msgstr "برای گرفتن بهترین نتایج ویدئوی خود را با پسوند %1$s و کمترین حجم بارگذاری نمایید. پوستهٔ شما ابعاد %2$s پیکسل را پیشنهاد می‌دهد."
 
-#: wp-includes/class-wp-customize-manager.php:5346
+#: wp-includes/class-wp-customize-manager.php:5352
 msgid "If you add a video, the image will be used as a fallback while the video loads."
 msgstr "اگر یک ویدیو اضافه کنید، تا قبل از آماده شدن ویدیو برای نمایش، تصویر نمایش داده خواهد شد."
 
 #. translators: %d: Number of themes being displayed, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4960
+#: wp-includes/class-wp-customize-manager.php:4966
 msgid "Displaying %d themes"
 msgstr "نمایش %d پوسته‌ها"
 
 #. translators: %d: Number of theme search results, which cannot currently
 #. consider singular vs. plural forms.
-#: wp-includes/class-wp-customize-manager.php:4958
+#: wp-includes/class-wp-customize-manager.php:4964
 msgid "%d themes found"
 msgstr "%d پوسته یافت شد"
 
-#: wp-includes/class-wp-customize-manager.php:4956
+#: wp-includes/class-wp-customize-manager.php:4962
 #: wp-admin/network/themes.php:172
 msgid "Are you sure you want to delete this theme?"
 msgstr "آیا از حذف این پوسته مطمئن هستید؟"
 
-#: wp-includes/class-wp-customize-manager.php:2367
+#: wp-includes/class-wp-customize-manager.php:2373
 msgid "Unauthorized to modify setting due to capability."
 msgstr "به دلیل سطح توانایی‌ها، مجاز به ویرایش تنظیمات نیستید."
 
-#: wp-includes/class-wp-customize-manager.php:2362
+#: wp-includes/class-wp-customize-manager.php:2368
 msgid "Setting does not exist or is unrecognized."
 msgstr "تنظیمات وجود ندارد یا ناشناخته است."
 
-#: wp-includes/class-wp-customize-manager.php:2148
+#: wp-includes/class-wp-customize-manager.php:2154
 msgid "This form is not live-previewable."
 msgstr "این فرم قابل پیش‌نمایش زنده نیست."
 
-#: wp-includes/class-wp-customize-manager.php:2147
+#: wp-includes/class-wp-customize-manager.php:2153
 msgid "This link is not live-previewable."
 msgstr "این پیوند قابل پیش‌نمایش زنده نیست."
 
@@ -15919,13 +15924,13 @@ msgstr "نمایشگر ویدیو"
 msgid "Time Slider"
 msgstr "کنترل‌کنندهٔ زمان"
 
-#: wp-includes/blocks/playlist.php:95 wp-includes/blocks/playlist.php:165
+#: wp-includes/blocks/playlist.php:95 wp-includes/blocks/playlist.php:174
 #: wp-includes/script-loader.php:1105 wp-includes/theme.php:1730
 msgid "Pause"
 msgstr "توقف"
 
 #: wp-includes/blocks/playlist-track.php:60 wp-includes/blocks/playlist.php:94
-#: wp-includes/blocks/playlist.php:166 wp-includes/script-loader.php:1104
+#: wp-includes/blocks/playlist.php:175 wp-includes/script-loader.php:1104
 #: wp-includes/theme.php:1731 wp-includes/js/dist/block-library.js:56238
 msgid "Play"
 msgstr "پخش"
@@ -16100,7 +16105,7 @@ msgstr "با عرض پوزش، شما اجازهٔ افزودن دسته را ن
 msgid "Sorry, you are not allowed to list users."
 msgstr "با عرض پوزش، شما اجازهٔ مرور کاربران را ندارید."
 
-#: wp-includes/class-wp-customize-manager.php:2390
+#: wp-includes/class-wp-customize-manager.php:2396
 #: wp-includes/class-wp-customize-setting.php:599
 #: wp-includes/script-loader.php:1370
 msgid "Invalid value."
@@ -16154,7 +16159,7 @@ msgstr "ثابت %1$s <strong>منسوخ شده است</strong>. برای فعا
 
 #. translators: 1: Panel ID, 2: Link to 'customize_loaded_components' filter
 #. reference.
-#: wp-includes/class-wp-customize-manager.php:3948
+#: wp-includes/class-wp-customize-manager.php:3954
 msgid "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 msgstr "Removing %1$s manually will cause PHP warnings. Use the %2$s filter instead."
 
@@ -16252,23 +16257,23 @@ msgstr "بستن کادر"
 msgid "The called constructor method for %1$s class in %2$s is <strong>deprecated</strong> since version %3$s! Use %4$s instead."
 msgstr "روش ساختار فراخوانی شده برای کلاس %1$s در %2$s از نگارش %3$s <strong>منقضی شده است</strong>! بجای آن از %4$s استفاده نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:5259
+#: wp-includes/class-wp-customize-manager.php:5265
 #: wp-includes/js/dist/block-library.js:70365
 #: wp-includes/js/dist/block-library.js:70499
 #: wp-includes/js/dist/edit-site.js:41384
 msgid "Choose logo"
 msgstr "انتخاب نشان"
 
-#: wp-includes/class-wp-customize-manager.php:5257
+#: wp-includes/class-wp-customize-manager.php:5263
 msgid "No logo selected"
 msgstr "هیچ نشانی گزیده نشده"
 
-#: wp-includes/class-wp-customize-manager.php:5254
+#: wp-includes/class-wp-customize-manager.php:5260
 msgid "Change logo"
 msgstr "تغییر نشان"
 
-#: wp-includes/class-wp-customize-manager.php:5253
-#: wp-includes/class-wp-customize-manager.php:5258
+#: wp-includes/class-wp-customize-manager.php:5259
+#: wp-includes/class-wp-customize-manager.php:5264
 msgid "Select logo"
 msgstr "گزینش نشان"
 
@@ -16330,19 +16335,19 @@ msgid "Paste URL or type to search"
 msgstr "نشانی اینترنتی را بچسبانید یا جهت جستجو، تایپ نمایید"
 
 #: wp-includes/blocks/site-logo.php:77
-#: wp-includes/class-wp-customize-manager.php:5245
+#: wp-includes/class-wp-customize-manager.php:5251
 #: wp-includes/js/dist/block-library.js:70460
 #: wp-includes/js/dist/block-library.js:70473
 #: wp-admin/includes/template.php:2473
 msgid "Logo"
 msgstr "نشان"
 
-#: wp-includes/class-wp-customize-manager.php:5194
-#: wp-includes/class-wp-customize-manager.php:5301
+#: wp-includes/class-wp-customize-manager.php:5200
+#: wp-includes/class-wp-customize-manager.php:5307
 msgid "Display Site Title and Tagline"
 msgstr "نمایش عنوان و خلاصه توضیحات سایت"
 
-#: wp-includes/class-wp-customize-manager.php:2146
+#: wp-includes/class-wp-customize-manager.php:2152
 #: wp-includes/customize/class-wp-customize-selective-refresh.php:173
 msgid "Shift-click to edit this element."
 msgstr "برای ویرایش این مورد از شیفت-کلیک استفاده کنید."
@@ -16948,7 +16953,7 @@ msgid "Reorder widgets"
 msgstr "بازچینی ابزارک‌ها"
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4599
+#: wp-includes/class-wp-customize-manager.php:4605
 msgid "Live Preview: %s"
 msgstr "پیش‌نمایش زنده: %s"
 
@@ -17075,13 +17080,13 @@ msgstr "پنهان کردن تصویر"
 msgid "Hide header image"
 msgstr "پنهان‌کردن تصویر سربرگ"
 
-#: wp-includes/class-wp-customize-manager.php:5216
+#: wp-includes/class-wp-customize-manager.php:5222
 #: wp-includes/js/dist/edit-site.js:41393 wp-includes/js/dist/editor.js:87495
 #: wp-admin/includes/template.php:2469 wp-admin/options-general.php:102
 msgid "Site Icon"
 msgstr "نمادک سایت"
 
-#: wp-includes/class-wp-customize-manager.php:5141
+#: wp-includes/class-wp-customize-manager.php:5147
 #: wp-includes/js/dist/editor.js:79700
 msgid "Site Identity"
 msgstr "هویت سایت"
@@ -20028,11 +20033,11 @@ msgstr "سرویس‌های XML-RPC در این سایت غیر فعال شده�
 msgid "Skip to toolbar"
 msgstr "رفتن به نوار ابزار"
 
-#: wp-includes/class-wp-customize-manager.php:5313
+#: wp-includes/class-wp-customize-manager.php:5319
 msgid "Header Text Color"
 msgstr "رنگ متن سربرگ"
 
-#: wp-includes/class-wp-customize-manager.php:5280
+#: wp-includes/class-wp-customize-manager.php:5286
 #: wp-includes/js/dist/editor.js:4474 wp-includes/js/dist/editor.js:56852
 #: wp-includes/js/dist/editor.js:71087 wp-includes/js/dist/editor.js:79763
 #: wp-includes/js/dist/editor.js:79822 wp-includes/js/dist/editor.js:80117
@@ -20077,7 +20082,7 @@ msgstr "با عرض پوزش، شما نمی‌توانید یک نوشته خص
 msgid "Sorry, you are not allowed to publish this page."
 msgstr "با عرض پوزش، شما اجازهٔ انتشار این برگه را ندارید."
 
-#: wp-includes/class-wp-customize-manager.php:5373
+#: wp-includes/class-wp-customize-manager.php:5379
 #: wp-includes/customize/class-wp-customize-header-image-control.php:55
 #: wp-admin/includes/class-custom-image-header.php:118
 #: wp-admin/includes/class-custom-image-header.php:546
@@ -20124,18 +20129,18 @@ msgstr "نام‌کاربری باید حداقل ۴ حرف داشته باشد.
 msgid "Please enter a username."
 msgstr "لطفاً نام کاربری را وارد نمایید."
 
-#: wp-includes/class-wp-customize-manager.php:5670
+#: wp-includes/class-wp-customize-manager.php:5676
 msgid "A static page"
 msgstr "برگهٔ ایستا"
 
-#: wp-includes/class-wp-customize-manager.php:5482
+#: wp-includes/class-wp-customize-manager.php:5488
 #: wp-includes/customize/class-wp-customize-background-image-control.php:40
 #: wp-admin/includes/class-custom-background.php:277
 #: wp-admin/includes/template.php:2459
 msgid "Background Image"
 msgstr "تصویر پس‌زمینه"
 
-#: wp-includes/class-wp-customize-manager.php:5336
+#: wp-includes/class-wp-customize-manager.php:5342
 #: wp-admin/includes/class-custom-background.php:483
 msgid "Background Color"
 msgstr "رنگ پس‌زمینه"
@@ -20150,12 +20155,12 @@ msgid "Remove image"
 msgstr "حذف تصویر"
 
 #: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:881
-#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2114
+#: wp-includes/rest-api/endpoints/class-wp-rest-comments-controller.php:2122
 #: wp-admin/comment.php:85
 msgid "Sorry, you are not allowed to edit this comment."
 msgstr "با عرض پوزش، شما مجاز به ویرایش این دیدگاه نیستید."
 
-#: wp-includes/class-wp-customize-manager.php:5704
+#: wp-includes/class-wp-customize-manager.php:5710
 msgid "Posts page"
 msgstr "برگهٔ نوشته‌ها"
 
@@ -20164,7 +20169,7 @@ msgid "Allowed Files"
 msgstr "پرونده‌های مجاز"
 
 #. translators: Hidden accessibility text.
-#: wp-includes/class-wp-customize-manager.php:5255
+#: wp-includes/class-wp-customize-manager.php:5261
 #: wp-includes/class-wp-customize-widgets.php:805
 #: wp-includes/class-wp-editor.php:1393
 #: wp-includes/customize/class-wp-customize-media-control.php:231
@@ -20314,7 +20319,7 @@ msgid "Stylesheet is not readable."
 msgstr "شیوه‌نامه قابل خواندن نیست."
 
 #. translators: %s: Document title from the preview.
-#: wp-includes/class-wp-customize-manager.php:4596
+#: wp-includes/class-wp-customize-manager.php:4602
 msgid "Customize: %s"
 msgstr "سفارشی‌سازی: %s"
 
@@ -20329,7 +20334,7 @@ msgstr "سفارشی‌سازی: %s"
 msgid "&mdash; Select &mdash;"
 msgstr "&mdash; گزینش &mdash;"
 
-#: wp-includes/abilities.php:54 wp-includes/class-wp-customize-manager.php:5175
+#: wp-includes/abilities.php:54 wp-includes/class-wp-customize-manager.php:5181
 #: wp-includes/option.php:2765 wp-admin/options-general.php:95
 msgid "Tagline"
 msgstr "معرفی کوتاه"
@@ -20339,7 +20344,7 @@ msgstr "معرفی کوتاه"
 msgid "Posts Page"
 msgstr "برگهٔ نوشته‌ها"
 
-#: wp-includes/class-wp-customize-manager.php:5669
+#: wp-includes/class-wp-customize-manager.php:5675
 #: wp-admin/options-reading.php:94
 msgid "Your latest posts"
 msgstr "آخرین نوشته‌های شما"
@@ -20792,8 +20797,8 @@ msgid "Toolbar"
 msgstr "نوار ابزار"
 
 #: wp-includes/block-patterns/navigation-overlay-centered-with-extras.php:30
-#: wp-includes/build/routes/connectors-home/content.js:11704
-#: wp-includes/build/routes/connectors-home/content.js:12244
+#: wp-includes/build/routes/connectors-home/content.js:11705
+#: wp-includes/build/routes/connectors-home/content.js:12245
 #: wp-includes/js/dist/edit-post.js:11027
 #: wp-includes/js/dist/edit-widgets.js:4578 wp-includes/js/dist/editor.js:8596
 #: wp-includes/js/dist/editor.js:100780
@@ -22456,8 +22461,8 @@ msgstr "خوراک (فید) دیدگاه‌ها"
 msgid "Insert Page Break tag"
 msgstr "درج برچسب شکستن صفحه"
 
-#: wp-includes/class-wp-customize-manager.php:5527
-#: wp-includes/class-wp-customize-manager.php:5586
+#: wp-includes/class-wp-customize-manager.php:5533
+#: wp-includes/class-wp-customize-manager.php:5592
 #: wp-admin/includes/class-custom-background.php:459
 msgid "Fill Screen"
 msgstr "تمام‌صفحه"
@@ -22638,7 +22643,7 @@ msgstr "سند جدید"
 msgid "Paste"
 msgstr "چسباندن"
 
-#: wp-includes/class-wp-customize-manager.php:4398
+#: wp-includes/class-wp-customize-manager.php:4404
 #: wp-includes/class-wp-editor.php:1181
 #: wp-includes/js/dist/block-editor.js:58481
 #: wp-includes/js/dist/components.js:31483 wp-includes/js/dist/editor.js:8608
@@ -23525,7 +23530,7 @@ msgstr "عنوان:"
 msgid "HTML"
 msgstr "ویرایش HTML"
 
-#: wp-includes/class-wp-customize-manager.php:5256
+#: wp-includes/class-wp-customize-manager.php:5262
 #: wp-includes/customize/class-wp-customize-color-control.php:54
 #: wp-includes/customize/class-wp-customize-media-control.php:230
 #: wp-includes/customize/class-wp-customize-media-control.php:240
@@ -23598,7 +23603,7 @@ msgstr "ساختار تاریخ"
 msgid "Email"
 msgstr "ایمیل"
 
-#: wp-includes/abilities.php:49 wp-includes/class-wp-customize-manager.php:5158
+#: wp-includes/abilities.php:49 wp-includes/class-wp-customize-manager.php:5164
 #: wp-includes/class-wp-xmlrpc-server.php:607 wp-signup.php:167
 #: wp-includes/js/dist/edit-site.js:41362 wp-admin/install.php:113
 #: wp-admin/options-general.php:76 wp-admin/network/site-new.php:238
@@ -23918,11 +23923,11 @@ msgid "Select"
 msgstr "گزینش"
 
 #. translators: Hidden accessibility text.
-#: wp-includes/blocks/image.php:207 wp-includes/blocks/image.php:325
+#: wp-includes/blocks/image.php:207 wp-includes/blocks/image.php:340
 #: wp-includes/blocks/navigation-overlay-close.php:18
 #: wp-includes/blocks/navigation-overlay-close.php:36
 #: wp-includes/blocks/navigation.php:784
-#: wp-includes/class-wp-customize-manager.php:5747
+#: wp-includes/class-wp-customize-manager.php:5753
 #: wp-includes/class-wp-editor.php:1189 wp-includes/class-wp-editor.php:1886
 #: wp-includes/general-template.php:478 wp-includes/script-loader.php:1003
 #: wp-includes/script-loader.php:1323 wp-includes/script-loader.php:2032
@@ -24056,7 +24061,7 @@ msgid "Search"
 msgstr "جستجو"
 
 #. translators: Hidden accessibility text.
-#: wp-includes/class-wp-customize-manager.php:4311
+#: wp-includes/class-wp-customize-manager.php:4317
 #: wp-includes/script-loader.php:1036
 #: wp-includes/widgets/class-wp-widget-text.php:547
 #: wp-includes/widgets/class-wp-widget-text.php:562
@@ -24367,7 +24372,7 @@ msgstr "بازتاب"
 msgid "Pingback"
 msgstr "بازتاب"
 
-#: wp-includes/class-wp-customize-manager.php:4874
+#: wp-includes/class-wp-customize-manager.php:4880
 #: wp-includes/script-loader.php:1312 wp-admin/includes/dashboard.php:619
 #: wp-admin/includes/meta-boxes.php:56 wp-admin/js/post.js:863
 msgid "Save Draft"
@@ -24741,7 +24746,7 @@ msgid "Attributes"
 msgstr "خواص"
 
 #. translators: accessibility text for the publish landmark region.
-#: wp-includes/class-wp-customize-manager.php:4869
+#: wp-includes/class-wp-customize-manager.php:4875
 #: wp-includes/script-loader.php:1310 wp-includes/js/dist/block-editor.js:84428
 #: wp-includes/js/dist/block-library.js:47194
 #: wp-includes/js/dist/edit-widgets.js:1862 wp-includes/js/dist/editor.js:49666
