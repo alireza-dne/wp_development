@@ -1,5 +1,32 @@
 <?php
 
+update_option('test', 'test');
+// delete_option('test');
+
+add_action('admin_init', function () {
+    add_settings_section('cy-test-slug', 'کد تنظیمات تستی', 'cy_test_html_view', 'reading');
+    register_setting('reading', 'cy_test_key');
+    add_settings_field('cy-test-field-key', 'تنظیمات تست:', 'cy_test_input_html', 'reading', 'cy-test-slug');
+
+    function cy_test_html_view()
+    {
+        echo "<p>کد تستی را اینجا وارد فرمایید.</p>";
+    }
+
+    function cy_test_input_html()
+    {
+        $key = get_option('cy_test_key');
+
+?>
+
+        <input type="text" name="cy_test_key" value="<?= $key ?>">
+
+    <?php
+    }
+});
+
+//////////////////////////////////////////////////////////
+
 add_action('admin_menu', function () {
     add_options_page(
         'عنوان سامانه پیامکی',
@@ -15,21 +42,21 @@ function sms_setting_menu_html_view()
 
     $activeTab = $_GET['setting_menu_tab'] ?? 'one';
 
-?>
-<h2>تنظیمات سامانه پیامکی</h2>
+    ?>
+    <h2>تنظیمات سامانه پیامکی</h2>
 
-<div class='wrap'>
-    <form action='options.php' method='post'>
+    <div class='wrap'>
+        <form action='options.php' method='post'>
 
-        <h3 class="nav-tab-wrapper">
-            <a href="?page=sms_setting_menu&setting_menu_tab=one"
-                class="nav-tab <?= $activeTab == 'one' ? 'nav-tab-active' : '' ?>">تب اول</a>
-            <a href="?page=sms_setting_menu&setting_menu_tab=two"
-                class="nav-tab <?= $activeTab == 'two' ? 'nav-tab-active' : '' ?>">تب دوم</a>
+            <h3 class="nav-tab-wrapper">
+                <a href="?page=sms_setting_menu&setting_menu_tab=one"
+                    class="nav-tab <?= $activeTab == 'one' ? 'nav-tab-active' : '' ?>">تب اول</a>
+                <a href="?page=sms_setting_menu&setting_menu_tab=two"
+                    class="nav-tab <?= $activeTab == 'two' ? 'nav-tab-active' : '' ?>">تب دوم</a>
 
 
-        </h3>
-        <?php
+            </h3>
+            <?php
 
 
             if ($activeTab == 'one') {
@@ -73,6 +100,6 @@ function sms_setting_menu_html_view()
         {
             $value = get_option('cy_sms_api_setting');
             ?>
-        <input type="text" name="cy_sms_api_setting" value="<?= $value ?>">
+            <input type="text" name="cy_sms_api_setting" value="<?= $value ?>">
         <?php
         }
