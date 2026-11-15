@@ -5,193 +5,20 @@
 <main>
 
     <!-- banner-post-area -->
-    <section class="banner-post-area-two pt-50 pb-30">
-        <div class="container">
-            <div class="banner-post-inner">
-                <div class="row">
-                    <div class="col-70">
-                        <div class="banner-post-two big-post">
-                            <div class="banner-post-thumb-two">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/t_banner_post01.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="banner-post-content-two">
-                                <a href="blog.html" class="post-tag">فن آوری</a>
-                                <h2 class="post-title bold-underline"><a href="blog-details.html">بازی هایی که باعث
-                                        تغییر زندگی انسان ها شده !</a></h2>
-                                <div class="blog-post-meta white-blog-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-user"></i>توسط<a href="author.html">مدیر</a></li>
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                        <li><i class="flaticon-history"></i>20 دقیقه</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-30">
-                        <div class="banner-post-two small-post">
-                            <div class="banner-post-thumb-two">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/t_banner_post02.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="banner-post-content-two">
-                                <a href="blog.html" class="post-tag">موبایل</a>
-                                <h2 class="post-title"><a href="blog-details.html">آیفون 14 ، نو آوری یا تولید
-                                        بیهوده ؟</a></h2>
-                                <div class="blog-post-meta white-blog-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="banner-post-two small-post">
-                            <div class="banner-post-thumb-two">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/t_banner_post03.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="banner-post-content-two">
-                                <a href="blog.html" class="post-tag">اسباب</a>
-                                <h2 class="post-title"><a href="blog-details.html">راهنمایی برای بهینه سازی تصویر در
-                                        سایت </a></h2>
-                                <div class="blog-post-meta white-blog-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="banner-post-two small-post">
-                            <div class="banner-post-thumb-two">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/t_banner_post04.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="banner-post-content-two">
-                                <a href="blog.html" class="post-tag">اخبار</a>
-                                <h2 class="post-title"><a href="blog-details.html">با استفاده از گوگل میت ، بین
-                                        المللی سخن بگویید !</a></h2>
-                                <div class="blog-post-meta white-blog-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('partials/index/index', 'banner-post-area') ?>
     <!-- banner-post-area-end -->
 
     <!-- ad-banner-area -->
-    <div class="ad-banner-area">
-        <div class="container">
-            <div class="ad-banner-img ad-banner-img-two text-center">
-                <a href="index-3.html#">
-                    <img src="<?= ASSET . 'zaira/assets/img/images/advertisement05.jpg' ?>" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
+    <?php get_template_part('partials/index/index', 'ad-banner-area') ?>
     <!-- ad-banner-area-end -->
 
     <!-- editor-post-area -->
-    <section class="editor-post-area pt-50">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="section-title-wrap mb-30">
-                        <div class="section-title">
-                            <h2 class="title">انتخاب ویراستاران</h2>
-                        </div>
-                        <div class="editor-nav"></div>
-                        <div class="section-title-line"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="editor-post-wrap swprtl">
-                <div class="row editor-post-active">
-                    <div class="col-lg-4">
-                        <div class="editor-post-item">
-                            <div class="editor-post-thumb">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/editor_img01.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="editor-post-content">
-                                <a href="blog.html" class="post-tag-two">موبایل</a>
-                                <h2 class="post-title"><a href="blog-details.html">نتایج سئو خود را بهبود ببخشید</a>
-                                </h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="editor-post-item">
-                            <div class="editor-post-thumb">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/editor_img02.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="editor-post-content">
-                                <a href="blog.html" class="post-tag-two">اسباب</a>
-                                <h2 class="post-title"><a href="blog-details.html">نحوه جستجوی شغل توسعه دهنده در
-                                        خارج از کشور</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="editor-post-item">
-                            <div class="editor-post-thumb">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/editor_img03.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="editor-post-content">
-                                <a href="blog.html" class="post-tag-two">فن آوری</a>
-                                <h2 class="post-title"><a href="blog-details.html">بهترین طراحان رابط کاربری را
-                                        بشناسید</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-4">
-                        <div class="editor-post-item">
-                            <div class="editor-post-thumb">
-                                <a href="blog-details.html"><img
-                                        src="<?= ASSET . 'zaira/assets/img/blog/editor_img02.jpg' ?>" alt=""></a>
-                            </div>
-                            <div class="editor-post-content">
-                                <a href="blog.html" class="post-tag-two">اسباب</a>
-                                <h2 class="post-title"><a href="blog-details.html">نحوه جستجوی شغل توسعه دهنده در
-                                        خارج از کشور</a></h2>
-                                <div class="blog-post-meta">
-                                    <ul class="list-wrap">
-                                        <li><i class="flaticon-calendar"></i>2 شهریور 1402</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <?php get_template_part('partials/index/index', 'editor-post-area') ?>
+
     <!-- editor-post-area-end -->
 
     <!-- trending-post-area -->
+    <?php get_template_part('partials/index/index', '') ?>
     <section class="trending-post-area pt-60 pb-60">
         <div class="container">
             <div class="trending-post-inner">
@@ -616,6 +443,7 @@
     <!-- trending-post-area-end -->
 
     <!-- ad-banner-area -->
+    <?php get_template_part('partials/index/index', '') ?>
     <div class="ad-banner-area pb-60">
         <div class="container">
             <div class="ad-banner-img">
@@ -628,6 +456,7 @@
     <!-- ad-banner-area-end -->
 
     <!-- overlay-post-area -->
+    <?php get_template_part('partials/index/index', '') ?>
     <section class="overlay-post-area fix swprtl">
         <div class="container-fluid p-0">
             <div class="overlay-post-item-wrap">
@@ -740,6 +569,7 @@
     <!-- overlay-post-area-end -->
 
     <!-- weekly-post-area -->
+    <?php get_template_part('partials/index/index', '') ?>
     <section class="weekly-post-area-two pt-60 pb-30">
         <div class="container">
             <div class="weekly-post-inner-wrap">
@@ -992,6 +822,7 @@
     <!-- weekly-post-area-end -->
 
     <!-- newsletter-area -->
+    <?php get_template_part('partials/index/index', '') ?>
     <section class="newsletter-area-three">
         <div class="container">
             <div class="row">

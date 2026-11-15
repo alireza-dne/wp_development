@@ -7,7 +7,8 @@
                      <div class="col-lg-3 col-md-7">
                          <div class="footer-widget">
                              <div class="fw-logo">
-                                 <a href="index.html"><img src="assets/img/logo/w_logo.png" alt=""></a>
+                                 <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/w_logo.png' ?>"
+                                         alt=""></a>
                              </div>
                              <div class="footer-content">
                                  <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان

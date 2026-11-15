@@ -2,19 +2,22 @@
 <html class="no-js" lang="fa">
 
 <head>
+
+    <?php wp_head() ?>
+
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title><?= get_bloginfo('name') ?></title>
     <meta name="description" content=<?= get_bloginfo('description') ?>>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= ASSET . 'zaira/assets/img/favicon.png' ?>">
     <!-- Place favicon.ico in the root directory -->
 
 
     <!-- CSS here -->
 
-    <?php wp_head() ?>
 
 </head>
 
@@ -91,10 +94,12 @@
                         <div class="menu-wrap">
                             <nav class="menu-nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                                    <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/logo.png' ?>"
+                                            alt=""></a>
                                 </div>
                                 <div class="logo d-none">
-                                    <a href="index.html"><img src="assets/img/logo/w_logo.png" alt=""></a>
+                                    <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/w_logo.png' ?>"
+                                            alt=""></a>
                                 </div>
                                 <div class="navbar-wrap main-menu d-none d-lg-flex">
                                     <ul class="navigation">
@@ -154,10 +159,12 @@
                             <nav class="menu-box">
                                 <div class="close-btn"><i class="fas fa-times"></i></div>
                                 <div class="nav-logo">
-                                    <a href="index.html"><img src="assets/img/logo/logo.png" alt="لوگو"></a>
+                                    <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/logo.png' ?>"
+                                            alt="لوگو"></a>
                                 </div>
                                 <div class="nav-logo d-none">
-                                    <a href="index.html"><img src="assets/img/logo/w_logo.png" alt="لوگو"></a>
+                                    <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/w_logo.png' ?>"
+                                            alt="لوگو"></a>
                                 </div>
                                 <div class="mobile-search">
                                     <form action="index-3.html#">
@@ -196,24 +203,26 @@
                 </div>
                 <div class="offCanvas-content">
                     <div class="offCanvas-logo logo">
-                        <a href="index.html" class="logo-dark"><img src="assets/img/logo/logo.png" alt="لوگو"></a>
-                        <a href="index.html" class="logo-light"><img src="assets/img/logo/w_logo.png" alt="لوگو"></a>
+                        <a href="index.html" class="logo-dark"><img
+                                src="<?= ASSET . 'zaira/assets/img/logo/logo.png' ?>" alt="لوگو"></a>
+                        <a href="index.html" class="logo-light"><img
+                                src="<?= ASSET . 'zaira/assets/img/logo/w_logo.png' ?>" alt="لوگو"></a>
                     </div>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است،
                         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است، و برای شرایط </p>
                     <ul class="offCanvas-instagram list-wrap">
-                        <li><a href="assets/img/blog/hr_post01.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post01.jpg" alt="تصویر"></a></li>
-                        <li><a href="assets/img/blog/hr_post02.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post02.jpg" alt="تصویر"></a></li>
-                        <li><a href="assets/img/blog/hr_post03.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post03.jpg" alt="تصویر"></a></li>
-                        <li><a href="assets/img/blog/hr_post04.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post04.jpg" alt="تصویر"></a></li>
-                        <li><a href="assets/img/blog/hr_post05.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post05.jpg" alt="تصویر"></a></li>
-                        <li><a href="assets/img/blog/hr_post06.jpg" class="popup-image"><img
-                                    src="assets/img/blog/hr_post06.jpg" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post01.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post01.jpg' ?>" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post02.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post02.jpg' ?>" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post03.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post03.jpg' ?>" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post04.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post04.jpg' ?>" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post05.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post05.jpg' ?>" alt="تصویر"></a></li>
+                        <li><a href="<?= ASSET . 'zaira/assets/img/blog/hr_post06.jpg' ?>" class="popup-image"><img
+                                    src="<?= ASSET . 'zaira/assets/img/blog/hr_post06.jpg' ?>" alt="تصویر"></a></li>
                     </ul>
                 </div>
                 <div class="offCanvas-contact">
