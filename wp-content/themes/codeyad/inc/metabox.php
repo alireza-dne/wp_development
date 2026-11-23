@@ -14,11 +14,11 @@ function cy_cmb2_add_post_selective_metabox()
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
-        'closed'     => true,
+        'closed'     => false,
     ));
 
     $cmb->add_field([
-        'name'       => 'آیا نوشته در هدر نمایش داده شود؟',
+        'name'       => 'آیا نوشته در هدر نمایش داده شود(نوشته منتخب)؟',
         'id'         => 'cy_cmb2_post_selective',
         'type'       => 'radio_inline', //این تغییر میکند
         'show_on_cb' => 'cmb2_hide_if_no_cats', // function should return a bool value
