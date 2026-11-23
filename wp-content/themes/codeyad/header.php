@@ -94,8 +94,10 @@
                         <div class="menu-wrap">
                             <nav class="menu-nav">
                                 <div class="logo">
-                                    <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/logo.png' ?>"
-                                            alt=""></a>
+                                    <a href="<?= home_url() ?>"><img
+                                            src="<?= ASSET . 'zaira/assets/img/logo/logo.png' ?>" alt=""></a>
+
+                                    <!-- <?php echo $args['name']; ?> -->
                                 </div>
                                 <div class="logo d-none">
                                     <a href="index.html"><img src="<?= ASSET . 'zaira/assets/img/logo/w_logo.png' ?>"
