@@ -10,7 +10,7 @@ $args = [
     'meta_value'     => 'on',
 ];
 
-$homeBanners = new WP_Query($args)->posts;
+$homeBanners = new WP_Query($args);
 
 ?>
 
@@ -19,26 +19,14 @@ $homeBanners = new WP_Query($args)->posts;
         <div class="banner-post-inner">
             <div class="row">
 
-                <?php if (!empty($homeBanners)) : ?>
+                <?php if ($homeBanners->have_posts()) : ?>
 
-                    <?php foreach ($homeBanners as $key => $homeBanner) :
+                    <?php $key = 0; ?>
 
-                        $post_id = $homeBanner->ID;
+                    <?php while ($homeBanners->have_posts()) :
+                        $homeBanners->the_post();
 
-                        $author_id = $homeBanner->post_author;
-                        $author = get_the_author_meta('display_name', $author_id);
-                        $author_link = get_author_posts_url($author_id);
-
-                        $categories = get_the_category($post_id);
-
-                        $title = get_the_title($post_id);
-                        $permalink = get_permalink($post_id);
-                        $thumbnail = get_the_post_thumbnail_url($post_id, 'full');
-                        $date = get_the_date('', $post_id);
-
-                        $content = get_post_field('post_content', $post_id);
-                        $reading_time = calcReadingTime($content);
-
+                        $categories = get_the_category();
                     ?>
 
                         <?php if ($key == 0) : ?>
@@ -47,8 +35,11 @@ $homeBanners = new WP_Query($args)->posts;
                                 <div class="banner-post-two big-post">
 
                                     <div class="banner-post-thumb-two">
-                                        <a href="<?= esc_url($permalink) ?>">
-                                            <img src="<?= esc_url($thumbnail ?: '') ?>" alt="<?= esc_attr($title) ?>">
+                                        <a href="<?= esc_url(get_permalink()) ?>">
+                                            <?php if (has_post_thumbnail()) : ?>
+                                                <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')) ?>"
+                                                    alt="<?= esc_attr(get_the_title()) ?>">
+                                            <?php endif; ?>
                                         </a>
                                     </div>
 
@@ -61,8 +52,8 @@ $homeBanners = new WP_Query($args)->posts;
                                         <?php endforeach; ?>
 
                                         <h2 class="post-title bold-underline">
-                                            <a href="<?= esc_url($permalink) ?>">
-                                                <?= esc_html($title) ?>
+                                            <a href="<?= esc_url(get_permalink()) ?>">
+                                                <?= esc_html(get_the_title()) ?>
                                             </a>
                                         </h2>
 
@@ -72,19 +63,19 @@ $homeBanners = new WP_Query($args)->posts;
                                                 <li>
                                                     <i class="flaticon-user"></i>
                                                     توسط
-                                                    <a href="<?= esc_url($author_link) ?>">
-                                                        <?= esc_html($author) ?>
+                                                    <a href="<?= esc_url(get_author_posts_url(get_the_author_meta('ID'))) ?>">
+                                                        <?= esc_html(get_the_author()) ?>
                                                     </a>
                                                 </li>
 
                                                 <li>
                                                     <i class="flaticon-calendar"></i>
-                                                    <?= esc_html($date) ?>
+                                                    <?= esc_html(get_the_date()) ?>
                                                 </li>
 
                                                 <li>
                                                     <i class="flaticon-history"></i>
-                                                    <?= esc_html($reading_time) ?> دقیقه
+                                                    <?= esc_html(calcReadingTime(get_the_content())) ?> دقیقه
                                                 </li>
 
                                             </ul>
@@ -101,8 +92,11 @@ $homeBanners = new WP_Query($args)->posts;
                                 <div class="banner-post-two small-post">
 
                                     <div class="banner-post-thumb-two">
-                                        <a href="<?= esc_url($permalink) ?>">
-                                            <img src="<?= esc_url($thumbnail ?: '') ?>" alt="<?= esc_attr($title) ?>">
+                                        <a href="<?= esc_url(get_permalink()) ?>">
+                                            <?php if (has_post_thumbnail()) : ?>
+                                                <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(), 'full')) ?>"
+                                                    alt="<?= esc_attr(get_the_title()) ?>">
+                                            <?php endif; ?>
                                         </a>
                                     </div>
 
@@ -115,8 +109,8 @@ $homeBanners = new WP_Query($args)->posts;
                                         <?php endforeach; ?>
 
                                         <h2 class="post-title">
-                                            <a href="<?= esc_url($permalink) ?>">
-                                                <?= esc_html($title) ?>
+                                            <a href="<?= esc_url(get_permalink()) ?>">
+                                                <?= esc_html(get_the_title()) ?>
                                             </a>
                                         </h2>
 
@@ -124,7 +118,7 @@ $homeBanners = new WP_Query($args)->posts;
                                             <ul class="list-wrap">
                                                 <li>
                                                     <i class="flaticon-calendar"></i>
-                                                    <?= esc_html($date) ?>
+                                                    <?= esc_html(get_the_date()) ?>
                                                 </li>
                                             </ul>
                                         </div>
@@ -134,11 +128,16 @@ $homeBanners = new WP_Query($args)->posts;
 
                             <?php endif; ?>
 
-                        <?php endforeach; ?>
+                        <?php
+                        $key++;
+                    endwhile;
+                        ?>
 
                             </div>
 
                         <?php endif; ?>
+
+                        <?php wp_reset_postdata(); ?>
 
             </div>
         </div>

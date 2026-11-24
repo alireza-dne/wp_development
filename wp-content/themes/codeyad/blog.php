@@ -4,4 +4,4 @@ Template Name: blogs
 */ ?>
 
 <?php
-echo 'newa';
+echo 'news';
